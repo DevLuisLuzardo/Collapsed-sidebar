@@ -1,0 +1,104 @@
+.app {
+  display: flex;
+}
+
+.sidebar {
+  background-color: gray;
+  width: 33%;
+  transition: width 0.4s;
+}
+
+.sidebar button {
+  /* Quitar background */
+  border:none;
+  background-color: transparent;
+  font-size: 30px;
+  color:brown;
+  /* ancho del botón */
+  width: 50px;
+  /* Ancho del botón */
+  height: 50px;
+  /* Alto del botón */
+  padding: 0;
+  /* Eliminar padding */
+  text-align: center;
+  /* Centrar el contenido */
+  line-height: 50px;
+  /* Ajustar la línea de texto */
+}
+
+.sidebar.collapsed {
+  /* Ancho reducido para el botón */
+  width: 80px;
+  /* ocultar background */
+  background-color: transparent;
+}
+
+.sidebar-header {
+  /* Ancho reducido para el botón */
+  padding: 10px;
+}
+
+/* Ocultar el menú cuando el sidebar está colapsado */
+.sidebar.collapsed .sidebar-nav-container {
+  /* ocultar contenido */
+  display: none;
+
+}
+
+.sidebar-nav-container {
+  /* Estilos para el contenedor del nav */
+  padding: 10px;
+}
+
+.sidebar-nav {
+  padding: 0;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.main.collapsed {
+  margin-left: 50px;
+  /* Margen ajustado al ancho del sidebar colapsado */
+}
+
+/* Asegurar que el botón se vea correctamente en el sidebar colapsado */
+.sidebar.collapsed .sidebar-header button {
+  /* Mostrar el botón */
+  width: 50px;
+  /* Ancho del botón */
+  height: 50px;
+  /* Alto del botón */
+  padding: 0;
+  /* Eliminar padding */
+  text-align: center;
+  /* Centrar el contenido */
+  line-height: 50px;
+  /* Ajustar la línea de texto */
+}
+
+/* Ocultar el texto del botón cuando está colapsado */
+.sidebar.collapsed .sidebar-header button span {
+  display: block;
+}
+
+
+
+
