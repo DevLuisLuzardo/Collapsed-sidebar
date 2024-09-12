@@ -29,7 +29,7 @@
 
 .sidebar.collapsed {
   /* Ancho reducido para el botón */
-  width: 80px;
+  width: 50px;
   /* ocultar background */
   background-color: transparent;
 }
@@ -71,7 +71,7 @@
 
 .main {
   flex: 1;
-  padding: 20px;
+  padding: 40px;
 }
 
 .main.collapsed {
@@ -90,7 +90,7 @@
   /* Eliminar padding */
   text-align: center;
   /* Centrar el contenido */
-  line-height: 50px;
+  line-height: 20px;
   /* Ajustar la línea de texto */
 }
 

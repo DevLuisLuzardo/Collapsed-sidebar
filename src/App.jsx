@@ -5,7 +5,9 @@ import Home from './components/Home';
 import About from './components/About';
 
 function App() {
-    const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+    //Inicio : Muestra el sidebar wn moso colapsado : useState(true)
+    //El contenido se mueatra en el main y estilos .main {...} index.css
+    const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(true);
 
     return (
         <BrowserRouter>
